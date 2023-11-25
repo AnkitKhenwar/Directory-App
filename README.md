@@ -67,4 +67,4 @@ Distributed under the MIT License. See `LICENSE` for more information.
 
 Ankit Khenwar - ankitkhenwar17@gmail.com
 
-Project Link: [https://github.com/your-username/your-repo-name](https://github.com/your-username/your-repo-name)
+Project Link: https://github.com/AnkitKhenwar/Directory-App/tree/main
