@@ -1,6 +1,6 @@
-# Directory-App
-Teachmint  Assignment made by Ankit  Khenwar using React 
 # Directory App
+Teachmint  Assignment made by Ankit  Khenwar using React 
+
 
 This repository contains the code for Directory App. Follow the instructions below to set up the project in Visual Studio Code and start the development server.
 
