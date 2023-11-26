@@ -1,0 +1,9 @@
+.card{
+    min-width: 275px;
+    min-height: 170px;
+    cursor: pointer;
+}
+.typography{
+    font-size: 14px;
+    text-align: center;
+}
