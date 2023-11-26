@@ -5,6 +5,7 @@ import {
   IconButton,
   Typography,
 } from "@mui/material";
+import Button from '@mui/material/Button';
 import React, { useEffect, useState } from "react";
 import { useNavigate, useParams, useSearchParams } from "react-router-dom";
 import PostCard from "../../components/PostCard/PostCard";
@@ -115,6 +116,7 @@ function UserDetail() {
               <IconButton onClick={() => navigate("/")}>
                 <ArrowBackIcon />
               </IconButton>
+              
             </Box>
             <Box
               sx={{
@@ -158,14 +160,27 @@ function UserDetail() {
                 >
                   <h3>{currentTime}</h3>
                 </Box>
-                <Box>
-                  <IconButton
-                    onClick={() => {
+                <Box ml={2} pl={1}>
+                  
+                  <Button   sx={{
+                    height: "50px",
+                    width: "110px",
+                    backgroundColor: "blue",
+                    color: "white",
+                    display: "flex",
+                    alignItems: "center",
+                    justifyContent: "center",
+                    borderRadius: "8px",
+                    fontWeight:700
+                  }} onClick={() => {
                       setIsPlay((prev) => !prev);
-                    }}
+                    }} variant="contained" endIcon={<IconButton sx={{color:"white"}}
+                    
                   >
                     {isPlay ? <PauseIcon /> : <PlayCircleIcon />}
-                  </IconButton>
+                  </IconButton>}>
+                  {isPlay ? "Pause" :"Start" }
+      </Button>
                 </Box>
               </Box>
             </Box>
@@ -188,7 +203,7 @@ function UserDetail() {
               sx={{
                 display: "flex",
                 justifyContent: "space-between",
-                "@media (max-width:425px)": {
+                "@media (max-width:431px)": {
                   flexDirection: "column",
                   rowGap: "10px",
                 },
@@ -224,7 +239,7 @@ function UserDetail() {
               sx={{
                 display: "flex",
                 justifyContent: "space-between",
-                "@media (max-width:425px)": {
+                "@media (max-width:431px)": {
                   flexDirection: "column",
                   rowGap: "10px",
                 },
