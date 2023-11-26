@@ -3,18 +3,8 @@ import React, { useEffect, useState } from "react";
 import UserCard from "../../components/UserCard/UserCard";
 import { GET_ALL_POST, GET_USER_LIST } from "../../API/endPoints";
 import { useNavigate } from "react-router-dom";
+import './Directory.css';
 
-const postBoxStyle = {
-  padding: "40px 70px",
-  display: "flex",
-  flexDirection: "column",
-  gap: "20px",
-};
-const headingBoxStyle = {
-  display: "flex",
-  justifyContent: "center",
-  marginTop: "5rem",
-};
 
 function Directory() {
   const navigate = useNavigate();
@@ -45,10 +35,10 @@ function Directory() {
     <Box>
       {userData?.length > 0 ? (
         <Box>
-          <Box sx={headingBoxStyle}>
+          <Box className="headingBoxStyle">
             <h1>Directory</h1>
           </Box>
-          <Box sx={postBoxStyle}>
+          <Box className="postBoxStyle" >
             {userData.map((user) => (
               <Box
                 key={user.id}
@@ -60,13 +50,7 @@ function Directory() {
           </Box>
         </Box>
       ) : (
-        <Box
-          sx={{
-            position: "absolute",
-            top: "50%",
-            left: "50%",
-          }}
-        >
+        <Box className="box-1">
           <CircularProgress />
         </Box>
       )}

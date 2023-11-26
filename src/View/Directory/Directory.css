@@ -1,0 +1,16 @@
+.headingBoxStyle{
+display: flex;
+justify-content: center;
+margin-top: 5rem;
+}
+.postBoxStyle{
+    padding: 40px 70px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.box-1{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+}
