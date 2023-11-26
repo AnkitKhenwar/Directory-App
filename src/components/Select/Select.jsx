@@ -4,17 +4,10 @@ import InputLabel from "@mui/material/InputLabel";
 import MenuItem from "@mui/material/MenuItem";
 import FormControl from "@mui/material/FormControl";
 import Select, { SelectChangeEvent } from "@mui/material/Select";
-
+import "./Select.css";
 export default function BasicSelect({ countries, handleChange, country }) {
   return (
-    <Box
-      sx={{
-        minWidth: 300,
-        "@media (max-width:448px)": {
-          width: "100%",
-        },
-      }}
-    >
+    <Box className="box">
       <FormControl fullWidth>
         <InputLabel id="demo-simple-select-label">Countries</InputLabel>
         <Select
@@ -23,7 +16,7 @@ export default function BasicSelect({ countries, handleChange, country }) {
           value={country}
           label="Country"
           onChange={handleChange}
-          sx={{ height: "50px" }}
+         className="select"
         >
           <MenuItem disabled>Select Country</MenuItem>
           {countries?.map((value) => (

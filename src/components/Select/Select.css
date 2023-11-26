@@ -1,0 +1,9 @@
+.box{
+    min-width: 300px;
+   @media (max-width:448px){
+      width: 100%;
+}
+}
+.select{
+    height: 50px;
+}
